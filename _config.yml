@@ -17,8 +17,8 @@ title: SBU PGSA
 email: sbupgsa@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Physics Graduate Student Association at Stony Brook University
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/website" # the subpath of your site, e.g. /blog
+url: "https://sbupgsa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sbu_pgsa
 github_username:  sbupgsa
 facebook_username: sbupgsa
