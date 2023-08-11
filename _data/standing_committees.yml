@@ -1,0 +1,27 @@
+- id: diversity
+  name: Committee on Diversity
+  charge: >-
+    Investigating potential methods of maintaining or increasing diversity, as it is defined in Title IX of the United States Education Amendments of 1972 (20 U.S.C. &sect;&sect; 1681&ndash;1688), within the Department that could be at the behest of the graduate students and advocating proactively to implement such methods. This committee is expected to maintain contact with the Departmental Committee on Diversity.
+  chair: Any voting member.
+- id: engagement
+  name: Committee on Engagement
+  charge: >-
+    Facilitating interactions between upperclasspersons and underclasspersons through various planned social events and advocating proactively on behalf of all members who are graduate students of the Department. This committee is also responsible for monitoring, to the best of its ability, and assisting underclasspersons in the process of matriculating to upperclassperson standing in the Department. The Underclassperson Member-at-Large shall be a member ex-officio to this committee.
+  chair: Upperclassperson Member-at-Large.
+- id: intradepartmental
+  name: Committee on Fostering Intradepartmental Interaction
+  charge: Facilitating interactions between members and staff and faculty of the Department through a collection of organized activities, including the daily tea/coffee time. This committee should also attempt to assist any other collection of members or non-members who attempt to accomplish a similar goal.
+  chair: Any voting member.
+- id: fas
+  name: Committee on Friday Afternoon Seminars
+  charge: Organizing and executing the Friday Afternoon Seminar series wherein faculty speak to first- and second- year students about ongoing research in the Department as a mechanism of pairing students to potential advisors and to educate students about research outside of their areas of interest. The entirety of this committee, bar the chair, must be first-year students unless circumstances prevent first-year students from partaking.
+  chair: A member who participated in organizing FAS in the year prior.
+  email: fassunysb@gmail.com
+- id: grad-talks
+  name: Committee on GRAD TALKS on Research Allowing Discussions To Advance Learning, Knowledge, and Skills (G.R.A.D. T.A.L.K.S.)
+  charge: Organizing and executing regular meetings of GRAD TALKS, wherein students convey to each other various topics, ranging from their own research to journal articles that pertain to their interests, in a casual setting.
+  chair: Any voting member.
+- id: masters
+  name: Committee on Master&rsquo;s Student Engagement and Activities
+  charge: Advocating proactively on behalf of all members who are Master&rsquo;s students of the Department. This committee is also responsible for monitoring, to the best of its ability, and assisting Master&rsquo;s students in the process of gaining adequate resources to succeed to a standard they deem attainable.
+  chair: Underclassperson Member-at-Large
