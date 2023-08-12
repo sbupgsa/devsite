@@ -1,7 +1,0 @@
-# - id: example
-#   name: Committee on Example Ad Hoc Committees
-#   charge: >-
-#     This is an example ad hoc committee.
-#   chair: Any voting member.
-#   email: user@example.com  ## Optional email address.
-#   ## Why would an ad hoc committee have an email address?

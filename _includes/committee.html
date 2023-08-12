@@ -1,0 +1,21 @@
+<section>
+  <h3 id="{{ include.committee_data.id }}">
+    {{ include.committee_data.name }}
+  </h3>
+  <p>
+    <b>Charge:</b>
+    {{ include.committee_data.charge }}
+  </p>
+  <p>
+    <b>Chair:</b>
+    {{ include.committee_data.chair }}
+  </p>
+  {% unless include.committee_data.email == nil %}
+    <p>
+      <b>Email:</b>
+      <a href="mailto:{{ include.committee_data.email }}">
+        {{ include.committee_data.email }}
+      </a>
+    </p>
+  {% endunless %}
+</section>

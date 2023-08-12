@@ -3,61 +3,25 @@ title: Committees
 layout: page
 ---
 
-<section>
-  <h2>Standing Committees</h2>
-  {% for committee in site.data.standing_committees %}
-    <section>
-      <h3 id="{{ committee.id }}">
-        {{ committee.name }}
-      </h3>
-      <p>
-        <b>Charge:</b>
-        {{ committee.charge }}
-      </p>
-      <p>
-        <b>Chair:</b>
-        {{ committee.chair }}
-      </p>
-      {% unless committee.email == nil %}
-        <p>
-          <b>Email:</b>
-          <a href="mailto:{{ committee.email }}">
-            {{ committee.email }}
-          </a>
-        </p>
-      {% endunless %}
-    </section>
-  {% endfor %}
-</section>
-<section>
-  <h2>Ad Hoc Committees</h2>
-  {% for committee in site.data.ad_hoc_committees %}
-    <section>
-      <h3 id="{{ committee.id }}">
-        {{ committee.name }}
-      </h3>
-      <p>
-        <b>Charge:</b>
-        {{ committee.charge }}
-      </p>
-      <p>
-        <b>Chair:</b>
-        {{ committee.chair }}
-      </p>
-      {% comment %}
-      Just in case an ad hoc committee has an email address for some
-      unforseen reason.
-      {% endcomment %}
-      {% unless committee.email == nil %}
-        <p>
-          <b>Email:</b>
-          <a href="mailto:{{ committee.email }}">
-            {{ committee.email }}
-          </a>
-        </p>
-      {% endunless %}
-    </section>
-  {% else %}
-    <p>There are currently no ad hoc committees.</p>
-  {% endfor %}
-</section>
+{% if site.data.committees %}
+  <section>
+    <h2>Standing Committees</h2>
+    {% assign standing_committees = site.data.committees | where: "standing", true %}
+    {% for committee in standing_committees %}
+      {% include committee.html committee_data=committee %}
+    {% else %}
+      <p>There are currently no standing committees.</p>
+    {% endfor %}
+  </section>
+  <section>
+    <h2>Ad Hoc Committees</h2>
+    {% assign ad_hoc_committees = site.data.committees | where_exp: "item", "item.standing != true" %}
+    {% for committee in ad_hoc_committees %}
+      {% include committee.html committee_data=committee %}
+    {% else %}
+      <p>There are currently no ad hoc committees.</p>
+    {% endfor %}
+  </section>
+{% else %}
+  <p>There are currently no committes.</p>
+{% endif %}
