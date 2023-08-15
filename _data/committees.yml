@@ -60,3 +60,8 @@
   standing: true
   charge: Advocating proactively on behalf of all members who are Master&rsquo;s students of the Department. This committee is also responsible for monitoring, to the best of its ability, and assisting Master&rsquo;s students in the process of gaining adequate resources to succeed to a standard they deem attainable.
   chair: Underclassperson Member-at-Large
+- id: constitution
+  name: Constitution Committee
+  standing: false
+  charge: Reviewing the PGSA constitution and considering proposed amendments to the constitution.
+  chair: Any voting member.
